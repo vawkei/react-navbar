@@ -298,14 +298,14 @@ p{
     left: 0;
     width: 50%;
     height: 100vh;
-    background-color: red;
+    background-color: white;
     padding: 1rem;
     transform: translateX(-200%);
     transition: all 0.2s;
     z-index: 10;
   }
 
-  .nav-wrapper{
+  .nav-backdrop{
     position: absolute;
     top: 0;
     right:0;
@@ -314,9 +314,10 @@ p{
     transform: translateX();
     transition: all 0.3s;
     background-color: rgba(0, 0, 0, 0.7);
+    /* This is the backdrop overlay */
   }
 
-  .show-nav-wrapper{
+  .show-nav-backdrop{
     transform: translateX(100%);
   }
 
@@ -359,12 +360,12 @@ p{
     margin-right:2rem ;
   }
 
-  .show-nav{
+  .showNavigation{
     transform: translateX(0);
     /* This is what triggers the appearance of the navbar backdrop and nav. else, you can click on the toggle button all day, nothing will happen. The 0px positions the nav slide on the left side at the start of the page. It also ensures the backdrop covers the entire page/screen.*/
   }
   
-  .hide-nav{
+  .hideNavigation{
     transform: translate(-200%);
   }
 }

@@ -39,13 +39,13 @@ const MainHeader = () => {
         {logo}
         <nav
           className={
-            showMenu ? `${classes["show-nav"]}` : `${classes["hide-nav"]}`
+            showMenu ? `${classes.showNavigation}` : `${classes.hideNavigation}`
           }>
           <div
             className={
               showMenu
-                ? `${classes["nav-wrapper"]} ${classes["show-nav-wrapper"]}`
-                : `${classes["nav-wrapper"]}`
+                ? `${classes["nav-backdrop"]} ${classes["show-nav-backdrop"]}`
+                : ''
             }
             onClick={hideMenuHandler}
           />
@@ -68,7 +68,7 @@ const MainHeader = () => {
               <NavLink className={"/register"} to={"/register"}>
                 Register
               </NavLink>
-              <NavLink className={"/orders"} to={"#"}>
+              <NavLink className={"/orders"} to={"/orders"}>
                 My Orders
               </NavLink>
               <NavLink to={"#"}>Logout</NavLink>
